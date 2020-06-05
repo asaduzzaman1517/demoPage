@@ -1,0 +1,11 @@
+//Link & Color
+.t-link {
+    display: inline-block;
+    transition: all .3s ease;
+    &:hover {
+        text-decoration: none;
+    }
+}
+.t-text-light {
+    color: $white;
+}

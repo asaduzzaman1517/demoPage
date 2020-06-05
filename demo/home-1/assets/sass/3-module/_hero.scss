@@ -1,0 +1,12 @@
+.ml-hero {
+    @include xxl-screen {
+        width: 90%;
+    }
+    &__title {
+        font-size: 5rem;
+        line-height: 1;
+        @include xxl-screen {
+            font-size: 6.25rem;
+        }
+    }
+}

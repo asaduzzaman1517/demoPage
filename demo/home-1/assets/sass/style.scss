@@ -1,0 +1,73 @@
+/*---------------------------------------
+    Theme Name: MileStop
+    Theme URI: 
+    Description: Coming Soon Template
+    Author Name: Softtech It
+    Author URI: Softtech It
+    Version: 1.0
+    Tags: 
+    License:
+    License URI:
+    Text Domain:
+-----------------------------------------
+    Table of contents
+-----------------------------------------
+    0.0 Vendor Style
+        0.01 Bootstrap
+        0.02 Font Awesome
+        0.03 Themify Icon
+        0.04 Slick Slider
+        0.05 Line Awesome Icon
+        0.06 Preloader
+
+    0.1 Base Style
+        1.4 Global CSS
+        1.5 Gutenberg Support Class
+
+    0.2 Layout Style
+        ** Left Side
+        ** Right Side
+
+    0.3 Modules Style
+        3.1 Logo
+        3.2 Hero
+        3.3 Buttons
+        3.4 List
+        3.5 Social Icons
+        3.6 Main style
+        3.7 Animation
+        3.8 Modal
+    
+    0.4 Theme Style
+        4.1 Background Color
+        4.2 Text Color
+        4.3 Margin
+        4.4 Padding
+        4.5 Spacer
+    
+-----------------------------------------*/
+
+/*---------------------------------------
+    0.0 Vendor Style
+-----------------------------------------*/
+@import "0-vendor/0-vendor";
+
+/*---------------------------------------
+    0.1 Base Style
+-----------------------------------------*/
+@import "1-base/1-base";
+
+/*---------------------------------------
+    0.2 Section Style
+-----------------------------------------*/
+@import "2-layout/2-layout";
+
+/*---------------------------------------
+    0.3 Modules Style
+-----------------------------------------*/
+@import "3-module/3-module";
+
+/*---------------------------------------
+    0.4 Theme Style
+-----------------------------------------*/
+@import "4-theme/4-theme";

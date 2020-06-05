@@ -1,0 +1,86 @@
+.btns {
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    &--regular {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 50px;
+        padding-right: 100px;
+        position: relative;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        &:hover {
+            color: $white;
+            box-shadow: 0 5px 15px rgba($black, .15);
+            .btns__icon-bg {
+                span {
+                    position: absolute;
+                    animation: buttonRotate .5s ease ;
+                }
+            }
+        }
+    }
+    &--primary {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        position: relative;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        &:hover {
+            color: $white;
+            box-shadow: 0 5px 10px rgba($black, .15);
+                .btns__icon {
+                    
+                    span {
+                        transform: translateX(5px);
+                    }
+                }
+        }
+    }
+    &-round {
+        border-radius: 100px;
+        &-5 {
+            border-radius: 5px;
+        }
+    }
+    &__icon {
+        span {
+            position: relative;
+        transition: all .3s ease;
+        }
+    }
+    &__icon-bg {
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%)  ;
+        background: rgba($white, .2);
+        transition: all .3s ease;
+    }
+}
+
+@keyframes buttonRotate {
+0% {
+    transform: rotate(0);
+}
+100% {
+    transform: rotate(360deg);
+}
+}

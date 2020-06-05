@@ -1,0 +1,12 @@
+.ml-logo {
+    width: 120px;
+    &__text {
+        margin-top: 20px;
+    }
+    &__sub-text {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 300;
+        color: $dark;
+    }
+}

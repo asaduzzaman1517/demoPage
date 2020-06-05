@@ -1,0 +1,121 @@
+.ml-animation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    &__box {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        &--1 {
+            animation: rotate 15s linear 1s infinite ;
+            background-image: url(../img/shape/shape-1.png);
+        }
+        &--2 {
+            top: 150px;
+            background-image: url(../img/shape/shape-2.png);
+            animation: circle 55s linear 5s infinite ;
+        }
+        &--3 {
+            top: 50px;
+            right: 10px;
+            background-image: url(../img/shape/shape-3.png);
+        }
+        &--4 {
+            top: 100px;
+            left: 50%;
+            background-image: url(../img/shape/shape-4.png);
+            animation: rotate 15s linear 1s infinite ;
+        }
+        &--5 {
+            bottom: 150px;
+            background-image: url(../img/shape/shape-5.png);
+            animation: circle 35s linear 5s infinite ;
+        }
+        &--6 {
+            bottom: 50px;
+            right: 10px;
+            background-image: url(../img/shape/shape-6.png);
+            animation: moveLeft 25s linear .5s infinite ;
+        }
+        &--7 {
+            bottom: 100px;
+            left: 50%;
+            background-image: url(../img/shape/shape-7.png);
+            animation: moveLeft 15s linear 1s infinite ;
+        }
+        &--8 {
+            top: 50%;
+            background-image: url(../img/shape/shape-8.png);
+        }
+        &--9 {
+            top: 50%;
+            left: 50%;
+            background-image: url(../img/shape/shape-9.png);
+            animation: moveLeft 15s linear 1s infinite ;
+        }
+        &--10 {
+            top: 50%;
+            right: 10px;
+            background-image: url(../img/shape/shape-10.png);
+            animation: moveLeft 15s linear .5s infinite ;
+        }
+        &--11 {
+            top: 200px;
+            left: 200px;
+            background-image: url(../img/shape/shape-11.png);
+            animation: circle 75s linear 5s infinite ;
+        }
+        &--12 {
+            bottom: 200px;
+            right: 200px;
+            background-image: url(../img/shape/shape-12.png);
+            animation: circle 65s linear 5s infinite ;
+        }
+        &--13 {
+            bottom: 300px;
+            right: 300px;
+            background-image: url(../img/shape/shape-13.png);
+            animation: circleAlt 55s linear 5s infinite ;
+        }
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes circle {
+    0% {
+        transform: rotate(0) translate(200px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translate(200px) rotate(-360deg);
+    }
+}
+@keyframes circleAlt {
+    0% {
+        transform: rotate(0) translate(-200px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translate(-200px) rotate(-360deg);
+    }
+}

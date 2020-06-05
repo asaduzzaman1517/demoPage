@@ -1,0 +1,17 @@
+//Link & Color
+.t-link {
+    display: inline-block;
+    transition: all .3s ease;
+    &:hover {
+        text-decoration: none;
+    }
+    &--primary {
+        color: $grad-primary-one;
+        &:hover {
+            color: $grad-primary-one;
+        }
+    }
+}
+.t-text-light {
+    color: $dark;
+}

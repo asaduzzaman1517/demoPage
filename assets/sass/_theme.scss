@@ -1,0 +1,19 @@
+.t-pt-100 {
+    padding-top: 100px;
+}
+.t-link {
+    display: inline-block;
+    transition:  all .3s ease;
+    &:hover {
+        text-decoration: none;
+    }
+    &--shadow {
+        border: 1px solid darken($white, 5%);
+        &:hover {
+            box-shadow: 0 5px 15px rgba($black, 0.2);
+        }
+    }
+}
+.t-bg-soft {
+    background: darken($white, 3%);
+}

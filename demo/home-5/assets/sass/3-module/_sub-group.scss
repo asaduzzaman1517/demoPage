@@ -1,0 +1,20 @@
+.sub-group {
+    display: flex;
+    align-items: center;
+    &--solid {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-left: 30px;
+        border-radius: 50px;
+        background: rgba($white, .15);
+    }
+    &__input {
+        width: 100%;
+        background: transparent;
+        border: transparent;
+        &:focus {
+            outline: none;
+        }
+    }
+}

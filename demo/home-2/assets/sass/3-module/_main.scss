@@ -1,0 +1,10 @@
+.ml-main {
+    height: 100vh;
+    min-height: 812px;
+    background-image: url(../img/dot-grid.png);
+    background-position: center center;
+    background-size: initial;
+    @include lg-screen {
+        min-height: auto;
+    }
+}

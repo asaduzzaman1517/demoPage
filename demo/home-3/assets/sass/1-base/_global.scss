@@ -1,0 +1,85 @@
+@import url("//fonts.googleapis.com/css2?family=Anton&family=Muli:wght@400;600&display=swap");
+
+html {
+    font-size: 10px;
+    @include lg-screen {
+        font-size: 12px;
+    }
+    @include xl-screen {
+        font-size: 16px;
+    }
+}
+
+body {
+    background-color: white;
+    font-family: $body-font;
+    font-size: 1.6rem;
+    @include lg-screen {
+        font-size: 1.333rem;
+    }
+    @include xl-screen {
+        font-size: 1rem;
+    }
+    font-weight: 400;
+    line-height: 1.45;
+    color: $black;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 2.75rem 0 1rem;
+    font-family: $heading-font;
+    font-weight: 700;
+    line-height: 1.15;
+    color: $dark;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3.75rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.25rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+h6 {
+    font-size: 1.125rem;
+}
+
+
+small,
+.sm-text {
+    font-size: 14px;
+}
+.lg-text {
+    font-size: 18px;
+}
+button {
+    &:focus {
+        outline: none !important;
+    }
+}
+.btn:focus,
+.btn.focus {
+    outline: none;
+    box-shadow: none;
+}

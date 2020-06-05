@@ -1,0 +1,48 @@
+.ml-main {
+	height: 100vh;
+	min-height: 812px;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+	@include lg-screen {
+		min-height: 100%;
+	}
+	&--bg {
+		background-image: url(../img/hero-bg.png);
+	}
+	&__content {
+		padding-left: 30px;
+		padding-right: 30px;
+		position: relative;
+		background: $white;
+		&-overlay {
+			width: 47%;
+			height: 100%;
+			background: $white;
+			position: absolute;
+            transform: skew(-20deg, 0deg);
+            @include xli-screen {
+                width: 45%;
+            }
+            @include xliv-screen {
+                width: 44%;
+            }
+			&-2 {
+				width: 50%;
+				height: 100%;
+				background: $button-shadow;
+				position: absolute;
+                transform: skew(-23deg, 0deg);
+                z-index: 0;
+                @include xli-screen {
+                    width: 47%;
+                }
+                @include xliv-screen {
+                    width: 46%;
+                }
+			}
+		}
+	}
+}

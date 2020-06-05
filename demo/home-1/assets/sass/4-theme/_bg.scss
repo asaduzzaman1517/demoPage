@@ -1,0 +1,6 @@
+// Background Color
+.t-bg-gradient {
+    &--primary {
+        background: linear-gradient(45deg, $grad-primary-one, $grad-primary-two);
+    }
+}

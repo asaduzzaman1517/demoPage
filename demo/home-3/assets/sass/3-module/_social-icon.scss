@@ -1,0 +1,61 @@
+.social-icon-bg {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    line-height: 1;
+    transition: all .3s ease;
+    &--fb {
+        background: rgba($fb, .15);
+        .social-icon {
+            color: $fb;
+        }
+        &:hover {
+            background: $fb;
+            .social-icon {
+                color: $white;
+            }
+        }
+    }
+    &--tw {
+        background: rgba($tw, .15);
+        .social-icon {
+            color: $tw;
+        }
+        &:hover {
+            background: $tw;
+            .social-icon {
+                color: $white;
+            }
+        }
+    }
+    &--dbbl {
+        background: rgba($ins, .15);
+        .social-icon {
+            color: $ins;
+        }
+        &:hover {
+            background: $ins;
+            .social-icon {
+                color: $white;
+            }
+        }
+    }
+    &--in {
+        background: rgba($in, .15);
+        .social-icon {
+            color: $in;
+        }
+        &:hover {
+            background: $in;
+            .social-icon {
+                color: $white;
+            }
+        }
+    }
+}
+.social-icon {
+    font-size: 24px;
+}
